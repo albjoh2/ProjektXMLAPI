@@ -59,6 +59,9 @@ form {
 h1 {
   margin: 50px;
 }
+h2 {
+  margin-top: 10px;
+}
 table {
   border-collapse: collapse;
   margin-top: 20px;
@@ -67,6 +70,7 @@ table {
 }
 td {
   padding: 5px;
+  border: #353535 solid 1px;
 }
 .staffCard {
   display: flex;
@@ -78,6 +82,9 @@ td {
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
+  background-color: #353535;
+  color: #eee;
+  border-radius: 5px;
 }
 
 .staffCardContainer {
@@ -86,4 +93,21 @@ td {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.graph-bar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  background-color: rgba(255, 112, 21);
+  margin-right: 2px;
+}
+.graph-container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 20px;
+  padding: 20px 40px 20px 40px;
+  border-bottom: 1px solid #353535;
 }

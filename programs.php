@@ -45,6 +45,29 @@
     ?>
     <?php if(isset($entries)):?>
     <?php echo "<h1>".$programToGet."</h1>" ?>
+    <h2>Antal Terminer</h2>
+    <div class="graph-container">
+        <?php
+        $my_graph_data = [];
+        foreach($entries as $entry){
+            $my_graph_data[] = $entry->getAttribute('hp');
+        }
+        echo "<div style='position:absolute; display:flex; flex-direction: column;'>";
+        foreach($my_graph_data as $bar_height){
+            echo "<div class='graph-bar' style='height:".$bar_height."px'></div>";
+        }
+        echo "</div>";
+        echo "<div style='z-index:1;display:flex; flex-direction: column;'>";
+            echo "<div class='graph-bar' style='height:30px; background-color:#ccccff55;'>Termin 6</div>";
+            echo "<div class='graph-bar' style='height:30px; background-color:#ccffcc55;'>Termin 5</div>";
+            echo "<div class='graph-bar' style='height:30px; background-color:#ccccff55;'>Termin 4</div>";
+            echo "<div class='graph-bar' style='height:30px; background-color:#ccffcc55;'>Termin 3</div>";
+            echo "<div class='graph-bar' style='height:30px; background-color:#ccccff55;'>Termin 2</div>";
+            echo "<div class='graph-bar' style='height:30px; background-color:#ccffcc55;'>Termin 1</div>";
+        echo "</div>";
+        ?>
+    </div>
+    <h2>Inkluderade kurser</h2>
     <table>
         <thead>
             <th>ID</th>
@@ -65,7 +88,9 @@
                     <p><?php echo $entry->getAttribute('area') ?></p>
                 </td>
                 <td>
-                    <p><?php echo $entry->getAttribute('name') ?></p>
+                    <?php echo "<a href='https://wwwlab.webug.se/xmlapi/a22albjo/projekt/courses.php?course=".rawurlencode($entry->getAttribute('name'))."'>" ?>
+                        <p><?php echo $entry->getAttribute('name') ?></p>
+                    </a>
                 </td>
             </tr>
         <?php endforeach ?>
