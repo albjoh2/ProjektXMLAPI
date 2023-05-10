@@ -43,6 +43,7 @@
         <div class="staffCardContainer">
         <?php foreach ($staffs as $staff) : ?>
             <div class="staffCard">
+                <img src="./bilder/<?php echo $staff->getAttribute('title') ?>.svg" alt="Bild på en <?php echo $staff->getAttribute('title') ?>" height="300px" width="240px" >
                 <p><?php echo $staff->getAttribute('id') ?></p>
                 <p><b><?php echo $staff->getAttribute('fname') ?> <?php echo $staff->getAttribute('lname') ?></b></p>
                 <p>Titel: <?php echo $staff->getAttribute('title') ?></p>

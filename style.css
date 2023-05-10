@@ -78,11 +78,11 @@ td {
   align-items: center;
   justify-content: center;
   width: 300px;
-  height: 300px;
+  height: 480px;
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
-  background-color: #353535;
+  background-color: #585858;
   color: #eee;
   border-radius: 5px;
 }
