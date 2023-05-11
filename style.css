@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: rgb(247, 244, 244);
+  background: linear-gradient(
+    143deg,
+    rgba(247, 244, 244, 1) 0%,
+    rgba(228, 221, 218, 1) 75%,
+    rgba(244, 244, 244, 1) 100%
+  );
+  overflow: hidden;
+}
+
 header {
   margin: 20px;
   padding: 50px;
@@ -13,16 +25,18 @@ header {
   gap: 20px;
   border-bottom: #353535 solid 1px;
 }
+
 a {
   font-size: 24px;
   color: black;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 a:visited {
   color: black;
 }
 a:hover {
-  text-decoration: underline;
+  transform: translateY(-5px);
 }
 body {
   display: flex;
@@ -56,8 +70,60 @@ form {
 .textbody {
   margin: 50px;
 }
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-1500%);
+  }
+  50% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#a1 {
+  animation: 3s ease-out -0s 1 slideInFromTop;
+}
+#a2 {
+  animation: 3s ease-out -0.5s 1 slideInFromTop;
+}
+#a3 {
+  animation: 3s ease-out -1s 1 slideInFromTop;
+}
+#a4 {
+  animation: 3s ease-out -1.5s 1 slideInFromTop;
+}
+#a5 {
+  animation: 3s ease-out -2s 1 slideInFromTop;
+}
+
 h1 {
-  margin: 50px;
+  animation: 3s ease-out 0s 1 slideInFromBottom;
+  text-align: left;
+  font-size: 125px;
+  margin: 30px;
+  margin-left: 230px;
+  margin-right: 230px;
+  background: #353535;
+  background: linear-gradient(
+    143deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(200, 64, 0, 1) 75%,
+    rgba(155, 118, 0, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 h2 {
   margin-top: 10px;

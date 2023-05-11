@@ -7,6 +7,7 @@
     <title>Room</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
 <header>
     <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/">Home</a>
     <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/courses.php">Courses</a>
@@ -14,7 +15,6 @@
     <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/rooms.php">Rooms</a>
     <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/staff.php">Staff</a>
 </header>
-<body>
 
     <?php
         //Hämta data

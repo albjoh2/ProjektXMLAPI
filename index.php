@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
     <header>
-        <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/">Home</a>
-        <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/courses.php">Courses</a>
-        <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/programs.php">Programs</a>
-        <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/rooms.php">Rooms</a>
-        <a href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/staff.php">Staff</a>
+        <a id="a1" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/">Home</a>
+        <a id="a2" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/courses.php">Courses</a>
+        <a id="a3" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/programs.php">Programs</a>
+        <a id="a4" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/rooms.php">Rooms</a>
+        <a id="a5" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/staff.php">Staff</a>
     </header>
     
-    <body>
         <h1>Welcome to the Universety of Your Dreams</h1>
         <div class="textbody">
-            <p>Please make yourself at home.</p>
+            <h1 style="text-align: right;">Take a look around.</h1>
         </div>
     </body>
 </html>
