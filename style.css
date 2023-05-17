@@ -12,7 +12,6 @@ body {
     rgba(228, 221, 218, 1) 75%,
     rgba(244, 244, 244, 1) 100%
   );
-  overflow: hidden;
 }
 
 header {
@@ -46,14 +45,14 @@ body {
 }
 select {
   height: 100%;
-  width: 350px;
-  font-size: 24px;
+  width: 300px;
+  font-size: 18px;
   margin: 0;
 }
 input {
   height: 100%;
-  width: 200px;
-  font-size: 24px;
+  width: 300px;
+  font-size: 18px;
   margin: 0;
 }
 button {
@@ -65,7 +64,7 @@ button {
   vertical-align: top;
 }
 form {
-  margin: 25px;
+  margin: 55px;
 }
 .textbody {
   margin: 50px;

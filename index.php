@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="overflow: hidden;">
     <header>
         <a id="a1" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/">Home</a>
         <a id="a2" href="https://wwwlab.webug.se/xmlapi/a22albjo/projekt/courses.php">Courses</a>

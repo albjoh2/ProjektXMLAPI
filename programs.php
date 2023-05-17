@@ -29,7 +29,7 @@
                 <option id="program" value="<?php echo $rooms['name'] ?>"><?php echo $rooms['name'] ?></option>
             <?php endforeach ?>
         </select>
-        <button>Check room</button>
+        <button>Check Program</button>
     </form>
 
     <?php
